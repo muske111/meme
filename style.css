@@ -4,6 +4,7 @@ body {
   background: #d3d3d3; /* Darker light gray background */
   color: #333;
 }
+
 .timeline-fancy {
   position: relative;
   display: flex;
@@ -76,106 +77,20 @@ body {
     left: calc(50% - 1rem);
   }
 }
+
+/* Optional Timeline Item Background - if used elsewhere */
 .timeline-item {
-  background: #cccccc; /* Darker shade for timeline cards */
+  background: #cccccc;
   padding: 1rem;
   border-left: 6px solid #000;
   border-radius: 5px;
 }
 
+/* Coin details background improvement */
 .coin-details {
-  background: #e0e0e0; /* Optional: unify with a darker light gray */
+  background: #e0e0e0;
   padding: 1rem;
   border-radius: 8px;
   margin-top: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.timeline-fancy {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
-
-.fart-phase {
-  position: relative;
-  padding-left: 3rem;
-  border-left: 4px solid #000;
-}
-
-.fart-phase .circle {
-  position: absolute;
-  left: -1rem;
-  top: 0;
-  background: #000;
-  color: yellow;
-  border-radius: 50%;
-  width: 2rem;
-  height: 2rem;
-  text-align: center;
-  line-height: 2rem;
-  font-weight: bold;
-  font-family: 'Bangers', cursive;
-  box-shadow: 0 0 0 4px #fff;
-}
-
-.fart-phase .content {
-  background: #fff;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.fart-phase h3 {
-  margin-top: 0;
-  font-family: 'Bangers', cursive;
-  font-size: 1.8rem;
-  color: #000;
-}
-
-.fart-phase p {
-  font-size: 1rem;
-  margin: 0.5rem 0 0;
-  color: #444;
-}
-
-@media (min-width: 768px) {
-  .timeline-fancy {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2rem;
-  }
-
-  .fart-phase {
-    width: calc(50% - 1rem);
-    border-left: none;
-    border-top: 4px solid #000;
-    padding-left: 0;
-    padding-top: 3rem;
-  }
-
-  .fart-phase .circle {
-    top: -1.2rem;
-    left: calc(50% - 1rem);
-  }
-}, and read this java script iam not getting output of this java script function createFartSmoke() {
-  const fart = document.createElement("div");
-  fart.className = "fart-smoke";
-
-  // Random horizontal position
-  fart.style.left = Math.random() * window.innerWidth + "px";
-
-  // Optional: random delay or scale variation
-  fart.style.animationDelay = Math.random() * 0.5 + "s";
-
-  document.body.appendChild(fart);
-
-  setTimeout(() => {
-    fart.remove();
-  }, 4000);
-}
-
-setInterval(createFartSmoke, 1200);
