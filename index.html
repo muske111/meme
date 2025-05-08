@@ -8,8 +8,130 @@
   <!-- Meme Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Neue', sans-serif;
+      background: #f0f0f0; /* Light gray background */
+      color: #333; /* Dark gray text */
+    }
+
+    .main-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #000; /* Black header */
+      color: white;
+      padding: 1rem 2rem;
+      font-family: 'Bangers', cursive;
+    }
+
+    .main-header h1 {
+      font-size: 2.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(135deg, #333, #666); /* Gradient for the hero section */
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      font-family: 'Bangers', cursive;
+    }
+
+    .cta-btn {
+      background: #000;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 1rem;
+      display: inline-block;
+      text-decoration: none;
+      font-family: 'Comic Neue', sans-serif;
+    }
+
+    .about-section, .roadmap {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .about-image {
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      margin: 0 auto 2rem;
+    }
+
+    .coin-details {
+      background: #fff; /* White background for details */
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .detail-item {
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .timeline-item {
+      background: #f0f0f0;
+      padding: 1rem;
+      border-left: 6px solid #000; /* Black border */
+      border-radius: 5px;
+    }
+
+    .main-footer {
+      text-align: center;
+      background: #000; /* Black footer */
+      color: white;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+
+    .main-footer a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    @media (min-width: 768px) {
+      .timeline {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .timeline-item {
+        flex: 1;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -29,67 +151,104 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero">
     <h2>Get Ready for the BullFart Coin Revolution!</h2>
-    <!-- Removed button, fart effect plays automatically -->
+<p>
+</p>
+    <a href="#buy" class="cta-btn">Buy BullFart Coin Now!</a>
   </section>
 
   <!-- About -->
   <section id="about" class="about-section">
     <img src="Bullfart.png" alt="BullFart Coin Meme" class="about-image">
     <h2>About BullFart Coin</h2>
-    <p><strong>BullFart Coin isn’t trying to save the world...</strong></p>
+    <p><strong>BullFart Coin isn’t trying to save the world. It’s not promising the next financial revolution. It’s just here to have a damn good time.
+
+Born out of late-night laughs, group chat chaos, and a serious case of crypto fatigue, BullFart Coin is what happens when degens say “what if we just made a coin that’s funny?” and actually did it.
+
+We’re not building a metaverse. We’re not writing a whitepaper. We’re just here to fart our way up the charts — one meme, one moonshot, one ridiculous pump at a time.
+
+If you’re tired of serious coins with zero personality and founders who take themselves way too seriously… you’re in the right place.</strong></p>
 
     <div class="coin-details">
       <div class="detail-item"><strong>Token Name:</strong> BullFart Coin</div>
-      <div class="detail-item"><strong>Symbol:</strong> BFC</div>
+      <div class="detail-item"><strong>Symbol:</strong> $BFC</div>
       <div class="detail-item"><strong>Mission:</strong> Spread memes, laughs, and pure crypto chaos</div>
-      <div class="detail-item"><strong>Launch Date:</strong> 🚀 TBD</div>
+      <div class="detail-item"><strong>Launch Date:</strong> TBD</div>
       <div class="detail-item"><strong>Purpose:</strong> Just to meme. No promises, only farts.</div>
       <div class="detail-item"><strong>Max Supply:</strong> Not too much. Not too little.</div>
       <div class="detail-item"><strong>Community:</strong> Fart Army unite!</div>
     </div>
 
     <h3>Why BullFart Coin?</h3>
-    <p>Because serious crypto is boring. We’re here to fart our way to the moon and beyond. 💨🌕</p>
+    <p>Because serious crypto is boring. We’re here to fart our way to the moon and beyond. </p>
   </section>
 
-  <!-- Roadmap -->
-  <section id="roadmap" class="roadmap">
-    <h2>🚗 Our Roadmap</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>Phase 1</h3>
-        <p>Launch the coin. Ignite the memes.</p>
-      </div>
-      <div class="timeline-item">
-        <h3>Phase 2</h3>
-        <p>Exchange listings & community takeoff.</p>
-      </div>
-      <div class="timeline-item">
-        <h3>Phase 3</h3>
-        <p>Fart-powered moon landing. 💥</p>
+  <!-- Fancy Roadmap -->
+<section id="roadmap" class="roadmap">
+  <h2 style="text-align: center; font-family: 'Bangers', cursive; font-size: 2.5rem; margin-bottom: 2rem;">The BullFart Journey</h2>
+  <div class="timeline-fancy">
+
+    <div class="fart-phase">
+      <div class="circle">1</div>
+      <div class="content">
+        <h3>The Original Leak</h3>
+        <p>The coin was born during a chaotic Discord rant about beans. A logo, a contract, and chaos ensued.</p>
       </div>
     </div>
-  </section>
+
+<section class="hero">
+  <h2>Get Ready for the BullFart Coin Revolution!</h2>
+  <!-- Audio player -->
+  <audio id="bullfart-sound" autoplay>
+    <source src="https://github.com/muske111/meme/blob/main/mixkit-cartoon-fart-sound-2891.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <a href="#buy" class="cta-btn">Buy BullFart Coin Now!</a>
+</section>
+
+
+    <div class="fart-phase">
+      <div class="circle">2</div>
+      <div class="content">
+        <h3>Shady Momentum</h3>
+        <p>Launched on a sketchy DEX. Burned 69% of supply. Twitter memes took off. Nobody knew what was happening. Perfect.</p>
+      </div>
+    </div>
+
+    <div class="fart-phase">
+      <div class="circle">3</div>
+      <div class="content">
+        <h3>The Chart That Went Vertical</h3>
+        <p>Launched NFTs, renamed dev wallet to “Taco Fund,” partnered with other meme coins via late-night DMs.</p>
+      </div>
+    </div>
+
+    <div class="fart-phase">
+      <div class="circle">4</div>
+      <div class="content">
+        <h3>The Age of Utility (Sort Of)</h3>
+        <p>Merch drop, fart-powered GameFi, and targeting an exchange listing. Utility is... whatever we say it is.</p>
+      </div>
+    </div>
+
+    <div class="fart-phase">
+      <div class="circle">5</div>
+      <div class="content">
+        <h3>Total Degeneration</h3>
+        <p>Metaverse porta-potties, potato farming fallback plan, and a Netflix doc pitch. We’re too gassed to stop now.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
 
   <!-- Footer -->
   <footer class="main-footer">
     <p>&copy; 2025 BullFart Coin. All Rights Reserved.</p>
     <p>Follow us on <a href="#">Twitter</a>, <a href="#">Telegram</a>, <a href="#">Discord</a></p>
   </footer>
-
-  <!-- Fart Sound -->
-  <audio id="fart-sound" src="fart.mp3" preload="auto"></audio>
-
-  <!-- JavaScript -->
-  <script src="fart.js"></script>
-  <script>
-    // Play fart smoke effect as soon as the page loads
-    document.addEventListener("DOMContentLoaded", function() {
-      setInterval(createFartSmoke, 1000);  // Creates fart smoke every 1 second
-    });
-  </script>
+<script src="fart.js"></script>
 </body>
 </html>
