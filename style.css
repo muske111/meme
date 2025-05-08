@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #222;
+    border-bottom: 2px solid #444;
+}
+
+.main-header h1 {
+    font-size: 2.5rem;
+    color: #ff6347;
+}
+
+.main-header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.main-header nav ul li a:hover {
+    background-color: #ff6347;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #333, #666); /* Gradient for the hero section */
+  color: white;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-family: 'Bangers', cursive;
+  margin-bottom: 20px; /* Add margin below the heading to prevent overlap */
+}
+
+.cta-btn {
+  background: #000;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px; /* Ensure some space above the button */
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Comic Neue', sans-serif;
+}
+
+.about-section, .roadmap {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.roadmap .timeline {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.roadmap .timeline-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+}
+
+.fart-smoke {
+  position: fixed;
+  bottom: 0;
+  width: 300px; /* Bigger fart cloud size */
+  height: 150px; /* Wide, rounded puff */
+  background: radial-gradient(circle at 50% 40%, rgba(255, 255, 255, 0.7), rgba(180, 180, 180, 0.6)); /* Off-white with gray shades */
+  border-radius: 50%; /* Rounded shape for a puff */
+  opacity: 0.5;
+  box-shadow: 0 0 30px 15px rgba(180, 180, 180, 0.3); /* Subtle shadow to simulate puffing */
+  animation: smokeRise 5s ease-out forwards;
+  z-index: 9999;
+  pointer-events: none;
+  filter: blur(6px); /* Soft, blurry edges for realistic look */
+}
+
+@keyframes smokeRise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-300px) scale(2);
+    opacity: 0;
+  }
+}
+
+
+
