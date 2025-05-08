@@ -9,62 +9,52 @@
   <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
 
   <!-- Style -->
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <link rel="stylesheet" href="style.css"/>
 
+  <style>
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #111;
-      color: white;
+      margin: 0;
+      font-family: 'Comic Neue', sans-serif;
+      background: #f0f0f0; /* Light gray background */
+      color: #333; /* Dark gray text */
     }
 
     .main-header {
       display: flex;
       justify-content: space-between;
-      padding: 20px;
-      background-color: #222;
-      border-bottom: 2px solid #444;
+      align-items: center;
+      background: #000; /* Black header */
+      color: white;
+      padding: 1rem 2rem;
+      font-family: 'Bangers', cursive;
     }
 
     .main-header h1 {
       font-size: 2.5rem;
-      color: #ff6347;
     }
 
-    .main-header nav ul {
-      list-style-type: none;
+    nav ul {
+      list-style: none;
       display: flex;
-      gap: 20px;
+      gap: 1.2rem;
     }
 
-    .main-header nav ul li a {
+    nav a {
       color: white;
       text-decoration: none;
-      font-size: 1.1rem;
-      padding: 8px 15px;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-
-    .main-header nav ul li a:hover {
-      background-color: #ff6347;
+      font-size: 1.2rem;
     }
 
     .hero {
       text-align: center;
       padding: 4rem 2rem;
-      background: linear-gradient(135deg, #333, #666);
+      background: linear-gradient(135deg, #333, #666); /* Gradient for the hero section */
       color: white;
     }
 
     .hero h2 {
       font-size: 3rem;
       font-family: 'Bangers', cursive;
-      margin-bottom: 20px;
     }
 
     .cta-btn {
@@ -75,53 +65,71 @@
       border: none;
       border-radius: 10px;
       cursor: pointer;
-      margin-top: 20px;
+      margin-top: 1rem;
       display: inline-block;
       text-decoration: none;
       font-family: 'Comic Neue', sans-serif;
     }
 
     .about-section, .roadmap {
-      padding: 50px 20px;
-      text-align: center;
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
     }
 
-    .roadmap .timeline {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
+    .about-image {
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      margin: 0 auto 2rem;
     }
 
-    .roadmap .timeline-item {
-      background-color: #333;
-      padding: 20px;
+    .coin-details {
+      background: #fff; /* White background for details */
+      padding: 1rem;
       border-radius: 8px;
-      width: 200px;
+      margin-top: 1rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
-    .fart-smoke {
-      position: fixed;
-      bottom: 0;
-      width: 300px;
-      height: 150px;
-      background: radial-gradient(circle at 50% 40%, rgba(255, 255, 255, 0.7), rgba(180, 180, 180, 0.6));
-      border-radius: 50%;
-      opacity: 0.5;
-      box-shadow: 0 0 30px 15px rgba(180, 180, 180, 0.3);
-      animation: smokeRise 5s ease-out forwards;
-      z-index: 9999;
-      pointer-events: none;
-      filter: blur(6px);
+    .detail-item {
+      margin-bottom: 0.5rem;
     }
 
-    @keyframes smokeRise {
-      0% {
-        transform: translateY(0) scale(1);
-        opacity: 0.8;
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .timeline-item {
+      background: #f0f0f0;
+      padding: 1rem;
+      border-left: 6px solid #000; /* Black border */
+      border-radius: 5px;
+    }
+
+    .main-footer {
+      text-align: center;
+      background: #000; /* Black footer */
+      color: white;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+
+    .main-footer a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    @media (min-width: 768px) {
+      .timeline {
+        flex-direction: row;
+        justify-content: space-between;
       }
-      100% {
-        transform: translateY(-300px) scale(2);
-        opacity: 0;
+
+      .timeline-item {
+        flex: 1;
       }
     }
   </style>
@@ -147,6 +155,8 @@
   <!-- Hero -->
   <section class="hero">
     <h2>Get Ready for the BullFart Coin Revolution!</h2>
+<p>
+</p>
     <a href="#buy" class="cta-btn">Buy BullFart Coin Now!</a>
   </section>
 
@@ -194,27 +204,6 @@
     <p>&copy; 2025 BullFart Coin. All Rights Reserved.</p>
     <p>Follow us on <a href="#">Twitter</a>, <a href="#">Telegram</a>, <a href="#">Discord</a></p>
   </footer>
-
-  <!-- JavaScript -->
-  <script>
-    function createFartSmoke() {
-      const fart = document.createElement("div");
-      fart.className = "fart-smoke";
-
-      // Random horizontal position
-      fart.style.left = Math.random() * window.innerWidth + "px";
-
-      // Optional: random delay or scale variation
-      fart.style.animationDelay = Math.random() * 0.5 + "s";
-
-      document.body.appendChild(fart);
-
-      setTimeout(() => {
-        fart.remove();
-      }, 4000);
-    }
-
-    setInterval(createFartSmoke, 1200);
-  </script>
+<script src="fart.js"></script>
 </body>
 </html>
