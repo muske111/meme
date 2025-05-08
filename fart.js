@@ -5,12 +5,13 @@ function createFartSmoke() {
   fart.style.animationDelay = Math.random() * 0.5 + "s";
   document.body.appendChild(fart);
 
-  // Optional: Play sound
   const sound = document.getElementById("fart-sound");
-  if (sound) sound.play();
+  if (sound) {
+    sound.currentTime = 0; // rewind to start
+    sound.play();
+  }
 
   setTimeout(() => {
     fart.remove();
   }, 4000);
 }
-
