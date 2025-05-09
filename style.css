@@ -1,64 +1,60 @@
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: #f7f9fc;
-  color: #2e2e2e;
+  font-family: 'Comic Neue', sans-serif;
+  background: #d3d3d3; /* Darker light gray background */
+  color: #333;
 }
 
 .timeline-fancy {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
 
-.timeline-phase {
+.fart-phase {
   position: relative;
-  padding-left: 2rem;
-  border-left: 3px solid #0052cc;
+  padding-left: 3rem;
+  border-left: 4px solid #000;
 }
 
-.timeline-phase .circle {
+.fart-phase .circle {
   position: absolute;
-  left: -1.2rem;
+  left: -1rem;
   top: 0;
-  background: #0052cc;
-  color: #fff;
+  background: #000;
+  color: yellow;
   border-radius: 50%;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 2rem;
+  height: 2rem;
   text-align: center;
-  line-height: 1.8rem;
+  line-height: 2rem;
   font-weight: bold;
-  box-shadow: 0 0 0 3px #fff;
+  font-family: 'Bangers', cursive;
+  box-shadow: 0 0 0 4px #fff;
 }
 
-.timeline-phase .content {
+.fart-phase .content {
   background: #fff;
   padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.timeline-phase .content:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.timeline-phase h3 {
+.fart-phase h3 {
   margin-top: 0;
-  font-size: 1.6rem;
-  color: #003366;
+  font-family: 'Bangers', cursive;
+  font-size: 1.8rem;
+  color: #000;
 }
 
-.timeline-phase p {
+.fart-phase p {
   font-size: 1rem;
   margin: 0.5rem 0 0;
-  color: #555;
+  color: #444;
 }
 
 @media (min-width: 768px) {
@@ -68,24 +64,33 @@ body {
     gap: 2rem;
   }
 
-  .timeline-phase {
+  .fart-phase {
     width: calc(50% - 1rem);
     border-left: none;
-    border-top: 3px solid #0052cc;
+    border-top: 4px solid #000;
     padding-left: 0;
-    padding-top: 2rem;
+    padding-top: 3rem;
   }
 
-  .timeline-phase .circle {
-    top: -1rem;
-    left: calc(50% - 0.9rem);
+  .fart-phase .circle {
+    top: -1.2rem;
+    left: calc(50% - 1rem);
   }
 }
 
+/* Optional Timeline Item Background - if used elsewhere */
+.timeline-item {
+  background: #cccccc;
+  padding: 1rem;
+  border-left: 6px solid #000;
+  border-radius: 5px;
+}
+
+/* Coin details background improvement */
 .coin-details {
-  background: #f0f4f8;
+  background: #e0e0e0;
   padding: 1rem;
   border-radius: 8px;
   margin-top: 1rem;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
